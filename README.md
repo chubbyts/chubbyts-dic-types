@@ -20,7 +20,7 @@ npm i @chubbyts/chubbyts-dic-types
 
 ## Copyright
 
-Dominik Zogg 2022
+2023 Dominik Zogg
 
 [1]: https://www.npmjs.com/package/@chubbyts/chubbyts-dic-types
 [2]: https://www.php-fig.org/psr/PSR-11
