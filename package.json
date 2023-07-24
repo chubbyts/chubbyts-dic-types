@@ -1,6 +1,7 @@
 {
   "name": "@chubbyts/chubbyts-dic-types",
-  "version": "1.1.1",
+  "type": "module",
+  "version": "1.2.0",
   "description": "Dependency injection container (DIC) types, PSR-11 inspired.",
   "keywords": [
     "chubbyts",
@@ -14,13 +15,13 @@
   "license": "MIT",
   "repository": "chubbyts/chubbyts-dic-types",
   "scripts": {
+    "build": "rm -rf ./dist && tsc -b ./tsconfig.types.json ./tsconfig.esm.json ./tsconfig.cjs.json && node ./rename-commonjs.js",
     "cs-fix": "prettier --write src",
     "cs": "prettier --check src",
+    "infection": "stryker run",
     "lint-fix": "eslint src --fix",
     "lint": "eslint src",
-    "infection": "stryker run",
-    "build": "tsc",
-    "prepare": "rm -Rf dist && npm run build && npm run cs"
+    "prepare": "npm run build"
   },
   "prettier": {
     "printWidth": 120,
@@ -31,13 +32,22 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    "./*": {
+      "types": "./*.d.ts",
+      "require": "./*.cjs",
+      "import": "./*.js",
+      "default": "./*.js"
+    }
+  },
   "engines": {
     "node": ">=16"
   },
   "dependencies": {},
   "devDependencies": {
-    "@chubbyts/chubbyts-eslint": "^1.1.2",
-    "@types/node": "^20.4.1",
+    "@chubbyts/chubbyts-eslint": "^2.0.2",
+    "@chubbyts/chubbyts-packaging": "^1.0.3",
+    "@types/node": "^20.4.4",
     "prettier": "^3.0.0",
     "typescript": "^5.1.6"
   },
