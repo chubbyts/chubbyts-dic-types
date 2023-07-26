@@ -1,7 +1,7 @@
 {
   "name": "@chubbyts/chubbyts-dic-types",
   "type": "module",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Dependency injection container (DIC) types, PSR-11 inspired.",
   "keywords": [
     "chubbyts",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": "chubbyts/chubbyts-dic-types",
   "scripts": {
-    "build": "rm -rf ./dist && tsc -b ./tsconfig.types.json ./tsconfig.esm.json ./tsconfig.cjs.json && node ./rename-commonjs.js",
+    "build": "node ./build.js",
     "cs-fix": "prettier --write src",
     "cs": "prettier --check src",
     "infection": "stryker run",
@@ -36,8 +36,8 @@
     "./*": {
       "types": "./*.d.ts",
       "require": "./*.cjs",
-      "import": "./*.js",
-      "default": "./*.js"
+      "import": "./*.mjs",
+      "default": "./*.mjs"
     }
   },
   "engines": {
@@ -45,8 +45,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@chubbyts/chubbyts-eslint": "^2.0.2",
-    "@chubbyts/chubbyts-packaging": "^1.0.3",
+    "@chubbyts/chubbyts-eslint": "^2.0.3",
+    "@chubbyts/chubbyts-packaging": "^2.0.3",
     "@types/node": "^20.4.4",
     "prettier": "^3.0.0",
     "typescript": "^5.1.6"
