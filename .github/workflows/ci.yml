@@ -31,7 +31,6 @@ jobs:
         with:
           node-version: '18'
       - run: npm install
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   node20:
     name: Node 20
     runs-on: ubuntu-22.04
