@@ -1,5 +1,6 @@
 # chubbyts-dic-types
 
+[![CI](https://github.com/chubbyts/chubbyts-dic-types/workflows/CI/badge.svg?branch=master)](https://github.com/chubbyts/chubbyts-dic-types/actions?query=workflow%3ACI)
 [![npm-version](https://img.shields.io/npm/v/@chubbyts/chubbyts-dic-types.svg)](https://www.npmjs.com/package/@chubbyts/chubbyts-dic-types)
 
 [![bugs](https://sonarcloud.io/api/project_badges/measure?project=chubbyts_chubbyts-dic-types&metric=bugs)](https://sonarcloud.io/dashboard?id=chubbyts_chubbyts-dic-types)
@@ -19,19 +20,19 @@ Dependency injection container (DIC) types, [PSR-11][2] inspired.
 
 ## Requirements
 
- * node: 16
+ * node: 18
 
 ## Installation
 
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-dic-types][1].
 
 ```ts
-npm i @chubbyts/chubbyts-dic-types@^1.2.1
+npm i @chubbyts/chubbyts-dic-types@^1.3.0
 ```
 
 ## Copyright
 
-2024 Dominik Zogg
+2025 Dominik Zogg
 
 [1]: https://www.npmjs.com/package/@chubbyts/chubbyts-dic-types
 [2]: https://www.php-fig.org/psr/PSR-11
