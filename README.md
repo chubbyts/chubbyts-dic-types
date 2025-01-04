@@ -27,7 +27,7 @@ Dependency injection container (DIC) types, [PSR-11][2] inspired.
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-dic-types][1].
 
 ```ts
-npm i @chubbyts/chubbyts-dic-types@^1.3.0
+npm i @chubbyts/chubbyts-dic-types@^1.3.1
 ```
 
 ## Copyright
