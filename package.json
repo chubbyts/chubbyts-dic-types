@@ -43,10 +43,10 @@
     "node": ">=18"
   },
   "devDependencies": {
-    "@chubbyts/chubbyts-eslint": "^4.0.7",
-    "@types/node": "^24.3.1",
+    "@chubbyts/chubbyts-eslint": "^4.0.10",
+    "@types/node": "^24.10.0",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "publishConfig": {
     "access": "public"
