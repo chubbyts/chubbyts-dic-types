@@ -21,7 +21,7 @@
     "infection": "stryker run",
     "lint-fix": "eslint src eslint.config.js --fix",
     "lint": "eslint src",
-    "prepare": "npm run build"
+    "prepare": "pnpm run build"
   },
   "prettier": {
     "printWidth": 120,
@@ -50,5 +50,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "unrs-resolver"
+    ]
   }
 }
