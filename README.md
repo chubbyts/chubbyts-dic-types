@@ -20,14 +20,14 @@ Dependency injection container (DIC) types, [PSR-11][2] inspired.
 
 ## Requirements
 
- * node: 18
+ * node: 20
 
 ## Installation
 
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-dic-types][1].
 
 ```ts
-npm i @chubbyts/chubbyts-dic-types@^2.0.1
+npm i @chubbyts/chubbyts-dic-types@^2.0.2
 ```
 
 ## Copyright
