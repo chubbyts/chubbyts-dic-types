@@ -19,8 +19,8 @@
     "cs-fix": "prettier --write src",
     "cs": "prettier --check src",
     "infection": "stryker run",
-    "lint-fix": "eslint src eslint.config.js --fix",
-    "lint": "eslint src",
+    "lint-fix": "oxlint --fix src",
+    "lint": "oxlint src",
     "prepare": "pnpm run build"
   },
   "prettier": {
@@ -43,10 +43,11 @@
     "node": ">=22"
   },
   "devDependencies": {
-    "@chubbyts/chubbyts-eslint": "^5.2.0",
     "@types/node": "^25.6.2",
     "prettier": "^3.8.3",
     "typescript": "^6.0.3"
+    "@chubbyts/chubbyts-oxlint": "^1.0.0",
+    "oxlint": "^1.75.0",
   },
   "publishConfig": {
     "access": "public"
