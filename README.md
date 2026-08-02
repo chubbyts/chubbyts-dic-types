@@ -1,6 +1,6 @@
 # chubbyts-dic-types
 
-[![CI](https://github.com/chubbyts/chubbyts-dic-types/workflows/CI/badge.svg?branch=master)](https://github.com/chubbyts/chubbyts-dic-types/actions?query=workflow%3ACI)
+[![CI](https://github.com/chubbyts/chubbyts-dic-types/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/chubbyts/chubbyts-dic-types/actions/workflows/ci.yml)
 [![npm-version](https://img.shields.io/npm/v/@chubbyts/chubbyts-dic-types.svg)](https://www.npmjs.com/package/@chubbyts/chubbyts-dic-types)
 
 [![bugs](https://sonarcloud.io/api/project_badges/measure?project=chubbyts_chubbyts-dic-types&metric=bugs)](https://sonarcloud.io/dashboard?id=chubbyts_chubbyts-dic-types)
