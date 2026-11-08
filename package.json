@@ -1,7 +1,7 @@
 {
   "name": "@chubbyts/chubbyts-dic-types",
   "type": "module",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "description": "Dependency injection container (DIC) types, PSR-11 inspired.",
   "keywords": [
     "chubbyts",
@@ -33,10 +33,15 @@
     "dist"
   ],
   "exports": {
+    "./dist/*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js",
+      "default": "./dist/*.js"
+    },
     "./*": {
-      "types": "./*.d.ts",
-      "import": "./*.js",
-      "default": "./*.js"
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js",
+      "default": "./dist/*.js"
     }
   },
   "engines": {
